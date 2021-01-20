@@ -1,0 +1,18 @@
+var
+Anacleto ,Felisberto :real
+anos: inteiro
+inicio
+Anacleto := 1.5
+Felisberto := 1.1
+anos := 0
+enquanto (Anacleto>= Felisberto)faca
+ Anacleto:= Anacleto+ 0.02
+ Felisberto := Felisberto+ 0.03
+ anos := anos + 1
+ escreval (anos)
+```
+fimenquanto 
+```
+escreva (" A qtde de anos foi de:",anos)
+// Seção de Comandos
+fimalgoritmo
