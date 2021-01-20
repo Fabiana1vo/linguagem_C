@@ -1,0 +1,59 @@
+var
+sexo,olhos,cabelos:caracter 
+idade,midade:inteiro
+mulher,perc,selec:real
+inicio
+// Seção de Comandos
+escreval("Diga a idade")
+leia(idade)
+enquanto (idade <> -1) faca
+ se (idade <=-2) entao
+ enquanto (idade <=-2) faca
+ escreval("idade invalida. -1 para sair")
+ leia(idade)
+ fimenquanto
+ fimse
+ se (idade >= 0) entao
+ se (idade > midade) entao
+ midade:= idade
+ fimse
+ escreval("Diga o sexo")
+ leia(sexo)
+ enquanto (sexo <> "F") e (sexo <> "M") faca
+ escreval("Invalido")
+ leia(sexo)
+ fimenquanto
+ escreval("Diga a cor dos olhos")
+ leia(olhos)
+ enquanto (olhos <> "A") e (olhos <> "V") e (olhos <> "C") faca
+ escreval("Invalido")
+ leia(olhos)
+ fimenquanto
+ escreval("Diga o cabelo")
+ leia(cabelos)
+ enquanto (cabelos <> "L") e (cabelos <> "P") e (cabelos <> "C") faca
+ escreval("Invalido")
+ leia(cabelos)
+ fimenquanto
+ se (sexo = "F") entao
+ mulher:= mulher + 1
+ se (idade >=18) e (idade <=35) entao
+ se (olhos = "V") entao
+ se (cabelos = "L") entao
+ selec:= selec + 1
+ fimse
+ fimse
+ fimse
+ fimse 
+ fimse
+ escreval("nova idade. -1 para sair")
+ leia(idade)
+fimenquanto
+escreval("Maior idade = ",midade)
+se (mulher > 0) entao
+ perc:= (selec * 100) / mulher
+ escreval("Percentual = ",perc:2:2, "%")
+ senao
+ escreval("Sem mulheres")
+fimse
+fimalgoritmo
