@@ -1,0 +1,24 @@
+Var
+// Seção de Declarações das variáveis
+ s,soma:real
+ den,num: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval ("Calculo de S")
+den:=1
+num:=1
+enquanto (num < 11) faca
+ se (num % 2=0) entao
+ soma:= (num/den) * (-1))
+ s:= s + soma
+
+ senao
+ soma:= num / den
+ s:= s + soma
+
+ fimse
+ num:= num+1
+ den:= num * num
+fimenquanto
+ escreval("Valor de S = ", s:2:2)
+Fimalgoritmo
