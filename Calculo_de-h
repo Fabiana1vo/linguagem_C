@@ -1,0 +1,17 @@
+Var
+// Seção de Declarações das variáveis
+ h,num,soma,deno:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval ("Cálculo de H")
+num:= 1
+deno:= 1
+ enquanto (deno <51) faca
+ soma:= num / deno
+ h:= h + soma
+ num:= num + 2
+ deno:= deno + 1
+ fimenquanto
+escreval ("o resultado de h é: ", h:2:2)
+
+Fimalgoritmo 
