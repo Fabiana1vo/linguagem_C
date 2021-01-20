@@ -1,0 +1,32 @@
+Var
+
+N1,N2,N3,N4: real
+
+media: real
+
+inicio
+escreval ("Digite as suas 4 notas")
+
+leia (N1,N2,N3,N4)
+
+media <-((N1+N2+N3+N4)/4)
+
+Se (media >= 7) entao
+
+escreval ("O seu resultado foi:" , media , " você foi Aprovado")
+         FIMSE
+
+ se (media < 7) entao
+ 
+media <-((media + 4) /2)
+         fimse
+  Se(media >=5)   entao
+
+escreval("O seu resultado foi:" , media   , "você foi aprovado em exame")
+
+       fimse
+       se (media <5) entao
+
+       escreval ("Sua nota foi:" , media, "você foi reprovado")
+   fimse
+   fimalgoritmo
