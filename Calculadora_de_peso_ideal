@@ -1,0 +1,30 @@
+Var
+// Seção de Declarações das variáveis
+
+   sexo: caracter
+   altura: inteiro
+   f:real
+   m:real
+   PesoIdeal: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+escreval("Digite seu sexo: M ou H?")
+leia (sexo)
+
+escreval ("Digite a sua altura?")
+leia (altura)
+
+Se sexo = "M" entao
+
+PesoIdeal:=(62.1*altura)-44.7
+
+ escreval ("O seu peso ideal é:", PesoIdeal)
+
+ Senao
+    PesoIdeal:=(72.7*altura) - 58
+      escreval ("O seu peso ideal é:", PesoIdeal)
+      Fimse
+
+Fimalgoritmo
