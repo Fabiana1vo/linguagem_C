@@ -1,0 +1,37 @@
+Var
+// Seção de Declarações das variáveis
+
+codigo: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+escreva ("Informe o codigo do produto:")
+leia (codigo)
+se (codigo = 1) entao
+escreva ("Alimento não-perecível")
+fimse
+
+se (codigo >=2) e (codigo<=4) entao
+escreva ("Alimento perecível")
+fimse
+
+se (codigo = 5) ou (codigo = 6) entao
+escreva ("Vestuário")
+fimse
+
+se (codigo = 7) entao
+escreva ("Higiene Pessoal")
+fimse
+
+se (codigo >=8) e (codigo <=15) entao
+escreva (" Limpeza e utensílios domésticos")
+ fimse
+
+se(codigo >=16) entao
+escreva (" O código informado é inválido ")
+
+ fimse
+fimalgoritmo
+
+
