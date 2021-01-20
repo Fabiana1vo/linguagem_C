@@ -1,0 +1,50 @@
+var
+codigo,emprego:inteiro
+grcodigo,grempreg,mdcodigo,mdempreg:inteiro
+pqcodigo,pqempreg,mccodigo,mcempreg:inteiro
+porte:caracter
+inicio
+// Seção de Comandos
+escreval("Digite o codigo da empresa")
+leia(codigo)
+enquanto ( codigo <> 0 ) faca
+ escreval("Diga a quantidade de empregados")
+ leia(emprego)
+ escreval("Diga o porte")
+ leia(porte)
+ enquanto (porte <> "GR") e (porte <> "MD") e (porte <> "PQ") e (porte <> "MC")
+faca
+ escreval("Porte inválido")
+ leia(porte)
+ fimenquanto
+ escolha porte
+ caso "GR"
+ se (empreg > grempreg) entao
+ grcodigo:= codigo
+ grempreg:= emprego
+ fimse
+ caso "MD"
+se (empreg > mdempreg) entao
+ mdcodigo:= codigo
+ mdempreg:= emprego
+ fimse
+ caso "PQ"
+ se (empreg > pqempreg) entao
+ pqcodigo:= codigo
+ pqempreg:= emprego
+ fimse
+ caso "MC"
+ se (empreg > mcempreg) entao
+ mccodigo:= codigo
+ mcempreg:= emprego
+ fimse
+ fimescolha
+ escreval("Digite a prox empresa. 0 finaliza")
+ leia(codigo)
+fimenquanto
+escreval("Selecionadas:")
+escreval("Porte GR Código: ",grcodigo," N empreg: ",grempreg)
+escreval("Porte MD Código: ",mdcodigo," N empreg: ",mdempreg)
+escreval("Porte PQ Código: ",pqcodigo," N empreg: ",pqempreg)
+escreval("Porte MC Código: ",mccodigo," N empreg: ",mcempreg)
+fimalgoritmo
